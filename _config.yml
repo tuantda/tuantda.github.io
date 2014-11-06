@@ -1,0 +1,15 @@
+# Site settings
+title: Tập tành I...tờ
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+    Trang web ghi lại những thủ thuật, mẹo, cách thức sử dụng hệ điều hành OSX,
+    Linux, Windows; quản lý mã nguồn Git; các ngôn ngữ Python, Ruby; hệ sắp chữ
+    TeX như LaTeX, ConTeXt; trình soạn thảo Vim trong quá trình tác giả Hai Tèo
+    tập tành học I-tờ.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://tuantda.github.io" # the base hostname & protocol for your site
+twitter_username: tuantdavn
+github_username:  tuantda
+
+# Build settings
+markdown: kramdown
