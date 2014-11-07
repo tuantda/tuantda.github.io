@@ -246,3 +246,17 @@
         }
     }
 }
+
+// Tags
+// -------------------------------------------------------
+.tags {
+    list-style: none;
+    padding: 0;
+    text-align: justify; 
+}
+
+.tags li {
+    display: inline-block;
+    margin: 0 20px 20px 0; 
+    font-size: 25px;
+}
