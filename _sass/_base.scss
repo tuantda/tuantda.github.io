@@ -151,6 +151,26 @@ pre {
 
 
 /**
+ * Tables
+ */
+table {
+    margin-bottom: $spacing-unit / 2;
+    width: 100%;
+    border: 1px solid $grey-color-light;
+    border-collapse: collapse;
+}
+td,
+th {
+    padding: 8px 12px;
+    border: 1px solid $grey-color-light;
+}
+thead tr:nth-child(odd) th {
+    background-color: #eef;
+}
+
+
+
+/**
  * Wrapper
  */
 .wrapper {
