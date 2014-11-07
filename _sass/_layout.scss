@@ -94,7 +94,19 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    text-align: center;
 }
+
+.site-footer ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-footer li {
+    display: inline-block;
+}
+
 
 .footer-heading {
     font-size: 18px;
