@@ -5,7 +5,27 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <p class="post-meta">
+      {{ page.date | date: "%d" }}
+      {% assign m = page.date | date: "%m" %}
+      {% case m %}
+        {% when '01' %}Tháng Giêng
+        {% when '02' %}Tháng Hai
+        {% when '03' %}Tháng Ba
+        {% when '04' %}Tháng Tư
+        {% when '05' %}Tháng Năm
+        {% when '06' %}Tháng Sáu
+        {% when '07' %}Tháng Bảy
+        {% when '08' %}Tháng Tám
+        {% when '09' %}Tháng Chín
+        {% when '10' %}Tháng Mười
+        {% when '11' %}Tháng Mười Một
+        {% when '12' %}Tháng Chạp
+      {% endcase %}
+      {{ page.date | date: "%Y" }}
+      {% if page.author %} • {{ page.author }}{% endif %}
+      {% if page.meta %} • {{ page.meta }}{% endif %}
+      </p>    
   </header>
 
   <article class="post-content">

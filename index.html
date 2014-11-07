@@ -4,13 +4,31 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">Bài viết</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
+        <span class="post-meta">
+          {{ post.date | date: "%d" }}
+          {% assign m = post.date | date: "%m" %}
+          {% case m %}
+            {% when '01' %}Tháng Giêng
+            {% when '02' %}Tháng Hai
+            {% when '03' %}Tháng Ba
+            {% when '04' %}Tháng Tư
+            {% when '05' %}Tháng Năm
+            {% when '06' %}Tháng Sáu
+            {% when '07' %}Tháng Bảy
+            {% when '08' %}Tháng Tám
+            {% when '09' %}Tháng Chín
+            {% when '10' %}Tháng Mười
+            {% when '11' %}Tháng Mười Một
+            {% when '12' %}Tháng Chạp
+          {% endcase %}
+          {{ post.date | date: "%Y" }}
+        </span>
+      
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
@@ -18,6 +36,6 @@ layout: default
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p class="rss-subscribe">đăng ký nhận tin <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></p>
 
 </div>
