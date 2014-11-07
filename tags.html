@@ -17,11 +17,11 @@ permalink: /tags/
 <div class="posts-list">
 {% for tag in site.tags %}
   {% capture tag_name %}{{ tag | first }}{% endcapture %}
-  <h4 id="#{{ tag_name | slugize }}">{{ tag_name }}</h2>
+  <h4 id="#{{ tag_name | slugize }}">{{ tag_name }}</h4>
   <a class="post" name="{{ tag_name | slugize }}"></a>
   {% for post in site.tags[tag_name] %}
   <article>
-    <h3><a class="post-link" href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h3>
+    <h2><a class="post-link" href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h2>
   </article>
   {% endfor %}
 {% endfor %}
