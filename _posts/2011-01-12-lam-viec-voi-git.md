@@ -13,7 +13,7 @@ dành cho việc phát triển Linux kernel.
 * Bảng Nội Dung
 {:toc}
 
-### Qui trình Git cơ bản {#workflow}
+## Qui trình Git cơ bản {#workflow}
 
 Dữ liệu trong repository được Git quản lý theo ba *tree*: **Working
 Directory**, **Index (stage)** và **HEAD (commit)** [^1] theo qui trình sau:
@@ -22,7 +22,7 @@ Directory**, **Index (stage)** và **HEAD (commit)** [^1] theo qui trình sau:
 <img src="/images/git-workflow.png">
 </figure>
 
-### Các lệnh dùng trong qui trình {#command}
+## Các lệnh dùng trong qui trình {#command}
 
 <figure>
 <img src="/images/git-transport.png">

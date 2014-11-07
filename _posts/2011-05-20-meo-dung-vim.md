@@ -30,7 +30,7 @@ G            : đến cuối tệp
 %            : di chuyển đến ngoặc đóng của ngoặc mở tương ứng
 {% endhighlight %}
 
-## Hiện trạng thái tệp {#status}
+### Hiện trạng thái tệp {#status}
 
 + `:=`     : hiện tổng số dòng của tệp
 + `ctrl+G` : hiện tên, số dòng, tổng số dòng và số % vị trí hiện tại của tệp

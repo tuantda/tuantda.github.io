@@ -12,7 +12,7 @@ văn bản thuần sang HTML. Đây là bản cú pháp markdown thần chưởn
 * Bảng Nội Dung
 {:toc}
 
-### Tiêu đề (Header): {#header}
+## Tiêu đề (Header): {#header}
 
 Một tiêu đề của đoạn văn được bắt đầu bằng _dấu thăng_ (`#`). Số lượng dấu thăng
 thể hiện cấp độ của tiêu đề và không nhiều hơn sáu.
@@ -45,7 +45,7 @@ dựa trên các tiêu đề khi biên dịch sang HTML bằng cách thêm vào 
 {:toc}
 {% endhighlight %}
 
-### Đoạn văn (Paragraph): {#paragraph}
+## Đoạn văn (Paragraph): {#paragraph}
 
 
 Một đoạn văn bao gồm một dòng hoặc nhiều dòng.
@@ -70,7 +70,7 @@ Quê hương là đường đi học\\
 Con về rợp bóng cò bay.
 {% endhighlight %}
 
-### Đoạn trích dẫn (Blockquote) {#quote}
+## Đoạn trích dẫn (Blockquote) {#quote}
 
 Đoạn trích dẫn được bắt đầu với _kí tự trích dẫn phải_ (`>`) tại đầu mỗi dòng
 như khi trả lời email hay chỉ dòng đầu tiên  và có thể được lồng vào nhau.
@@ -89,7 +89,7 @@ trích dẫn.
 > > được lồng vào nhau
 thế này.
 
-### Khối mã (Code block) {#code}
+## Khối mã (Code block) {#code}
 
 Các đoạn mã được trình bày bằng cách thêm _bốn khoảng trắng_ tại đầu mỗi
 dòng mã (standard code block):
@@ -131,7 +131,7 @@ end
 quanh phần mã như thế này `` `inline code` ``
 {: .notice}
 
-### Đường kẻ ngang (Horizontal rule) {#hr}
+## Đường kẻ ngang (Horizontal rule) {#hr}
 
 Dùng ba dấu sao, dấu gạch ngang, dấu gạch chân viết liền hoặc cách nhau
 khoảng trắng:
@@ -152,7 +152,7 @@ _ _ _
 ___
 _ _ _
 
-### Danh sách (List) {#list}
+## Danh sách (List) {#list}
 
 {% highlight text %}
 * Danh sách với kí tự sao
@@ -180,7 +180,7 @@ _ _ _
     2. danh sách con
 69. Danh sách tự động đánh số tiếp theo
 
-### Danh sách định nghĩa (Definition list) {#definition}
+## Danh sách định nghĩa (Definition list) {#definition}
 
 {% highlight text %}
 Rượu
@@ -192,7 +192,7 @@ Rượu
 : nho
 : vang
 
-### Bảng (Table) {#table}
+## Bảng (Table) {#table}
 
 {% highlight text %}
 | Header | Header | Right  |
@@ -215,7 +215,7 @@ Rượu
 + Kí tự `=` tách phần footer
 + Kí tự `:` gióng hàng trong cột (trái, phải hoặc 2 bên là gióng giữa)
 
-### Nhấn mạnh chữ (Emphasis) {#emphasis}
+## Nhấn mạnh chữ (Emphasis) {#emphasis}
 
 {% highlight text %}
 Đây là *chữ in nghiêng* và đây cũng _in nghiêng_
@@ -227,7 +227,7 @@ Rượu
 
 Đây là **chữ in đậm** và đây cũng __in đậm__
 
-### Liên kết (Link) {#link}
+## Liên kết (Link) {#link}
 
 Một *liên kết tự động* được tạo đơn giản với cặp móc nhọn (`<`,`>`) bao quanh
 liên kết như thế này:
@@ -260,7 +260,7 @@ Truy cập [trang tìm kiếm][Google] và đặt [Google] làm trang chủ
 
 [Google]: http://google.com "Trang tìm kiếm Google"
 
-### Hình ảnh (Image) {#image}
+## Hình ảnh (Image) {#image}
 
 Với hình ảnh cũng tương tự:
 
@@ -270,7 +270,7 @@ Với hình ảnh cũng tương tự:
 
 ![hoa](/images/hoa-anh-dao.jpg 'hoa anh đào')
 
-# Lời chú cuối trang (Footnote) {#footnote}
+## Lời chú cuối trang (Footnote) {#footnote}
 
 {% highlight text %}
 Đây là một ghi chú[^1]
@@ -282,7 +282,7 @@ Với hình ảnh cũng tương tự:
 
 [^1]: và đây là diễn giải footnote
 
-### Chữ viết tắt (Abbreviation) {#abbr}
+## Chữ viết tắt (Abbreviation) {#abbr}
 
 {% highlight text %}
 Đây là CVT
@@ -294,7 +294,7 @@ Với hình ảnh cũng tương tự:
 
 *[CVT]: Chữ Viết Tắt
 
-### Phần tử HTML (HTML) {#html}
+## Phần tử HTML (HTML) {#html}
 
 Các cặp tag HTML cũng được hỗ trợ như thế này
 

@@ -11,9 +11,9 @@ Có đống note không biết làm gì đành vật Jekyll ra cho nó xử lý 
 * Nội dung:
 {:toc}
 
-### Môi trường OSX {#osx}
+## Môi trường OSX {#osx}
 
-### Môi trường Windows {#win}
+## Môi trường Windows {#win}
 
 Cài đặt Ruby
 

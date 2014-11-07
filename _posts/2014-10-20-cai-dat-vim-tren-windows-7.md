@@ -11,7 +11,7 @@ dựa trên UNIX. Bài viết này trình bày cách cài đặt gVim, một phi
 (GUI) của Vim, trên Windows 7 và dùng Git, Pathogen để quản lý các phần bổ trợ
 (plugin).
 
-### Cài đặt gVim
+## Cài đặt gVim
 
 Cài đặt gVim từ [trang chủ của Vim][vim]:
 
@@ -25,7 +25,7 @@ lý cấu hình cùng các ứng dụng khác.
 
 ![homedir-install](/images/vim_install_path.png 'Chọn thư mục cài gVim')
 
-### Quản lý plugin với Git và Pathogen
+## Quản lý plugin với Git và Pathogen
 
 [Pathogen][pathogen] là một plugin quản lý `runtimepath`, giúp chúng ta dễ dàng
 cài đặt các plugin và tệp runtime cho Vim vào một thư mục.
@@ -67,12 +67,12 @@ Cài đặt các plugin của Vim vào thư mục `bundle` như các `submodule`
     git submodule foreach git submodule init
     git submodule foreach git submodule update
 
-### Ghi chú:
+## Ghi chú:
 
-#### mswin.vim
+### mswin.vim
 
 map phím di chuyển lên, xuống, trái, phải vào j,k,h,l để dùng trong `Visual
-Mode` với `mswin.vim`
+Mode`
 
     if has("win32")
         map <down> j
@@ -81,7 +81,7 @@ Mode` với `mswin.vim`
         map <left> h
     endif
 
-#### Hiển thị tiếng Việt
+### Hiển thị tiếng Việt
 
 Bảo gVim dùng mã hóa `UTF-8` không dùng mã hóa `CP-1252` của Windows
 

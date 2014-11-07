@@ -13,9 +13,9 @@ Mặc định, Vim chỉ kiểm tra tiếng Anh. Để kiểm tra ngôn ngữ kh
 các tập tin chính tả theo định dạng Vim từ các gói Aspell/Hunspell thông qua
 lệnh `mkspell` trong Vim.
 
-### Kiểm tra chính tả spellcheck
+## Kiểm tra chính tả spellcheck
 
-#### Tạo tập tin kiểm tra chính tả theo định dạng Vim
+### Tạo tập tin kiểm tra chính tả theo định dạng Vim
 
 Trang dự án [Bộ kiểm tra chính tả tiếng Việt][vi-hunspell] cung cấp các gói
 kiểm tra chính tả dùng cho OpenOffice/LibreOffice, Firefox/Thunderbird và
@@ -47,7 +47,7 @@ trong đó `vi` là tên ngôn ngữ của từ điển sẽ biên dịch, `vi_V
 trường hợp này là `vi.utf-8.spl`. Sao chép tập tin này vào thư mục
 `$VIMRUNTIMEPATH/spell` để sử dụng.
 
-#### Sử dụng
+### Sử dụng
 
 Để bắt đầu sử dụng tập tin kiểm tra chính tả vừa tạo, ta bật chức năng kiểm tra
 chính ta bằng lệnh:
@@ -66,7 +66,7 @@ Sau khi bật, Vim sẽ gạch dưới (hoặc tô sáng nếu trong terminal) c
 màu đỏ, các từ hiếm bằng màu cam, các từ không viết hoa đầu dòng bằng màu xanh
 dương,...
 
-#### Các lệnh cần nhớ
+### Các lệnh cần nhớ
 
 + **]s** : di chuyển đến từ kế tiếp
 + **[s** : di chuyển đến từ trước
@@ -74,7 +74,7 @@ dương,...
 + **zug** : xóa từ vừa thêm khỏi từ điển
 + **z=** : xem từ đề nghị cho từ sai
 
-### Tự động chỉnh sửa từ sai
+## Tự động chỉnh sửa từ sai
 
 Dùng chức năng viết tắt của Vim để tự chỉnh sửa từ viết sai theo thói quen.
 
