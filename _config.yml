@@ -11,5 +11,6 @@ url: "http://tuantda.github.io" # the base hostname & protocol for your site
 twitter_username: tuantdavn
 github_username:  tuantda
 
+permalink: /:title/
 # Build settings
 markdown: kramdown
