@@ -3,7 +3,6 @@ layout: post
 title: "Cú pháp markdown"
 published: true
 tags: [markdown, cheatsheet]
-categories: blog
 ---
 
 Markdown là ngôn ngữ đánh dấu đơn giản, tạo thuận tiện cho việc chuyển đổi từ

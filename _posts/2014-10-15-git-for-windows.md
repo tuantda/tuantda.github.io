@@ -3,7 +3,6 @@ layout: post
 title: "Git for Windows"
 published: true
 tags: [git, windows]
-categories: [blog]
 ---
 
 

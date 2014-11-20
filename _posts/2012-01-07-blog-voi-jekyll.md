@@ -3,7 +3,6 @@ layout: post
 title: "Blog với Jekyll"
 published: true
 tags: [jekyll]
-categories: blog
 ---
 
 Có đống note không biết làm gì đành vật Jekyll ra cho nó xử lý vậy.

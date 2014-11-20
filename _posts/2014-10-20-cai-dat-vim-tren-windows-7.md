@@ -3,7 +3,6 @@ layout: post
 title: "Cài đặt gVim trên Windows 7"
 published: true
 tags: [windows, vim]
-categories: [blog]
 ---
 
 Vim là trình biên tập văn bản mạnh mẽ dựa trên Vi thường chạy trên các hệ thống

@@ -3,7 +3,6 @@ layout: post
 title: "Làm việc với Git"
 published: true
 tags: [git]
-categories: blog
 modified: 2013-12-11
 ---
 

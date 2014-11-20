@@ -3,7 +3,6 @@ layout: post
 title: "Lỗi piix4_smbus trên Virtualbox"
 published: true
 tags: [virtualbox]
-categories: blog
 ---
 
 Khi khởi động máy ảo Linux trên Virtualbox xuất hiện dòng thông báo lỗi

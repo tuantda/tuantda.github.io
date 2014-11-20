@@ -3,7 +3,6 @@ layout: post
 title: "Trò chuyện cùng Vim"
 published: true
 tags: [vim]
-categories: [blog]
 ---
 
 

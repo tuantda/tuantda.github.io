@@ -3,7 +3,6 @@ layout: post
 title: "Mẹo dùng Vim"
 published: true
 tags: [vim, tips]
-categories: blog
 description: "Các mẹo về tìm kiếm, thay thế, di chuyển trong Vim"
 ---
 

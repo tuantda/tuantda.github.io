@@ -3,7 +3,6 @@ layout: post
 title: "Kiểm tra chính tả tiếng Việt trong Vim"
 published: true
 tags: [vim, spell, vietnamese]
-categories: blog
 description: "cách thức kiểm tra tiếng Việt trong Vim 7"
 ---
 

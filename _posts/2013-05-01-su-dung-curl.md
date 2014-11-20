@@ -3,7 +3,6 @@ layout: post
 title: "Sử dụng cURL"
 published: true
 tags: [curl]
-categories: blog
 description: "Sử dụng cURL tải một hay nhiều tập tin cùng lúc; tải toàn bộ trang
 web"
 ---
