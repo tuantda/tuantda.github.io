@@ -92,25 +92,34 @@ g*            - tìm tất cả từ chứa từ dưới trỏ (khác *)
 - Thêm, xóa kí tự tại đầu hoặc cuối dòng
 
 {% highlight text %}
-:[range]s/^/foo      # Thêm foo tại đầu dòng           
-:[range]s/$/foo      # Thêm foo tại cuối dòng          
-:[range]s/^..//      # Xóa 2 ký tự tại đầu dòng        
-:[range]s/..$//      # Xóa 2 ký tự tại cuối dòng       
+:[range]s/^/foo      # Thêm foo tại đầu dòng
+:[range]s/$/foo      # Thêm foo tại cuối dòng
+:[range]s/^..//      # Xóa 2 ký tự tại đầu dòng
+:[range]s/..$//      # Xóa 2 ký tự tại cuối dòng
 {% endhighlight %}
 
   **Ghi chú:** `.` *(dấu chấm)* đại diện cho một ký tự (một *khoảng trắng* hoặc
   một *tab* cũng là một ký tự).
 
 - Thêm một vài khoảng trắng đầu dòng (hữu ích khi định dạng đoạn mã)
-          
+
 {% highlight text %}
 :[range]s/^/    /    # thêm 4 khoảng trắng đầu dòng
 {% endhighlight %}
 
+- Xóa các khoảng trắng không muốn cuối dòng
+
+`\s` sẽ tìm khoảng trắng, `\+` tìm theo số lần xuất hiện
+
+{% highlight text %}
+:%s/\s\+$//
+{% endhighlight %}
+
+
 ## Một số biến tùy chỉnh
 
 ### Tùy chỉnh kích cỡ cửa sổ
- 
+
 {% highlight text %}
 set lines=29   : hiển thị 30 hàng
 set columns=90 : hiển thị 90 cột
