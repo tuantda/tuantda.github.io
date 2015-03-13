@@ -125,4 +125,27 @@ set lines=29   : hiển thị 30 hàng
 set columns=90 : hiển thị 90 cột
 {% endhighlight %}
 
+### Định dạng
+
+#### Chuyển đổi định dạng tệp từ DOS sang UNIX
+
+Khai báo trong `.vimrc` mặc định dùng định dạng tệp là `unix`
+
+    :set fileformats=unix,dos,mac
+    :set fileformat=unix            # luôn dùng lineending kiểu unix lf
+
+Chuyển đổi tệp hiện tại từ DOS sang UNIX
+
+    :update             "lưu lại các thay đổi hiện tại
+    :e ++ff=dos         "sửa đổi tệp, bỏ qua định dạng DOS
+    :setlocal ff=unix   "chuyển sang định dạng UNIX
+    :w                  "lưu lại
+
+Chuyển đổi nhiều tệp trong thư mục từ DOS sang UNIX
+
+    :args *.html                "xác định loại tệp cần chuyển đổi
+    :argdo set ff=unix|update   "chuyển đổi tệp sang UNIX và lưu lại
+
+Chuyển đổi định dạng từ UNIX sang DOS làm ngược lại
+
 [Trò chuyện với Vim]: {% post_url 2014-10-10-tro-chuyen-cung-vim %}
