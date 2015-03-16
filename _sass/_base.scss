@@ -58,7 +58,7 @@ figure {
     display: block;
 }
 
-figure img {
+figure > img {
     margin-bottom: 0.5em;
 }
 
@@ -101,7 +101,7 @@ a {
     text-decoration: none;
 
     &:visited {
-        color: lighten($brand-color, 15%);
+        color: darken($brand-color, 15%);
     }
 
 
@@ -157,8 +157,6 @@ pre {
     }
 }
 
-
-
 /**
  * Tables
  */
@@ -176,8 +174,6 @@ th {
 thead tr:nth-child(odd) th {
     background-color: #eef;
 }
-
-
 
 /**
  * Wrapper

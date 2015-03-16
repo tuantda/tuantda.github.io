@@ -25,9 +25,9 @@ layout: default
       {{ page.date | date: "%Y" }}
       {% if page.author %} • {{ page.author }}{% endif %}
       {% if page.meta %} • {{ page.meta }}{% endif %}
-      </p>    
+      </p>
     <span class="post-meta">
-        Tags: 
+        Tags:
       {% if post %}
         {% assign tags = post.tags %}
       {% else %}
@@ -37,7 +37,7 @@ layout: default
       <a href="/tags/#{{tag|slugize}}">{{tag}}</a>{% unless forloop.last %},{% endunless %}
       {% endfor %}
     </span>
-      
+
   </header>
 
   <article class="post-content">
