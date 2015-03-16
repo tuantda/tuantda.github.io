@@ -13,19 +13,19 @@ và chạy
 
 - Use `git-cheetah` plugin and TrueType Font
 
-![component](/images/git_install_component.png)
+{% include figure.html src="../images/git_install_component.png" caption="use TrueType font" %}
 
 - Git Bash only
 
-![path](/images/git_install_env.png)
+{% include figure.html src="../images/git_install_env.png" caption="use Git from Git Bash" %}
 
-- `core.autocrlf=true`
+- `core.autocrlf=input`
 
-![crlf](/images/git_install_lineend.png)
+{% include figure.html src="../images/git_install_lineend.png" caption="set core.autocrlf=input" %}
 
 - Attention: space in directory's name
 
-![dir](/images/git_install_path.png)
+{% include figure.html src="../images/git_install_path.png" caption="change default install directory" %}
 
 
 [git4win]: http://git-scm.com/download/win

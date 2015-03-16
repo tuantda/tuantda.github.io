@@ -16,13 +16,13 @@ Cài đặt gVim từ [trang chủ của Vim][vim]:
 
 Chọn tùy chọn **Full** trong quá trình cài đặt:
 
-![full-install](/images/vim_install_full.png 'Full Install')
+{% include figure.html src="../images/vim_install_full.png" caption="Tùy chọn Cài đặt Full" %}
 
 Mặc định, gVim sẽ cài vào đường dẫn `C:\Program Files (x86)`, chúng ta nên thay
 đổi cài đặt vào thư mục nhà của người dùng `C:\Users\Tên_người_dùng` để dễ quản
 lý cấu hình cùng các ứng dụng khác.
 
-![homedir-install](/images/vim_install_path.png 'Chọn thư mục cài gVim')
+{% include figure.html src="../images/vim_install_path.png" caption="Chọn thư mục cài gVim" %}
 
 ## Quản lý plugin với Git và Pathogen
 

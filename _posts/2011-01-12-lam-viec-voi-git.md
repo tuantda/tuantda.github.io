@@ -17,15 +17,11 @@ dành cho việc phát triển Linux kernel.
 Dữ liệu trong repository được Git quản lý theo ba *tree*: **Working
 Directory**, **Index (stage)** và **HEAD (commit)** [^1] theo qui trình sau:
 
-<figure>
-<img src="/images/git-workflow.png">
-</figure>
+{% include figure.html src="../images/git-workflow.png" caption="Quy trình làm việc với Git" %}
 
 ## Các lệnh dùng trong qui trình {#command}
 
-<figure>
-<img src="/images/git-transport.png">
-</figure>
+{% include figure.html src="/images/git-transport.png" caption="Các lệnh dùng trong quy trình làm việc" %}
 
 Đây là một Git workflow đơn giản với các nguyên tắc cơ bản [^2]:
 
