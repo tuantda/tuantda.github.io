@@ -264,10 +264,10 @@ Truy cập [trang tìm kiếm][Google] và đặt [Google] làm trang chủ
 Với hình ảnh cũng tương tự:
 
 {% highlight text %}
-![hoa](images/hoa-anh-dao.jpg 'hoa anh đào')
+![hoa](../images/hoa-anh-dao.jpg 'hoa anh đào')
 {% endhighlight %}
 
-![hoa](/images/hoa-anh-dao.jpg 'hoa anh đào')
+![hoa](../images/hoa-anh-dao.jpg 'hoa anh đào')
 
 ## Lời chú cuối trang (Footnote) {#footnote}
 
