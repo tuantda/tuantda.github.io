@@ -12,6 +12,13 @@ Plugin quản lý `$VIMRUNTIME`
     execute pathogen#infect()
     execute pathogen#helptags()
 
+Để cài đặt một plugin, ta `clone` hoặc giải nén vào thư mục `$VIM/bundle`
+(trên Windows là `$RUNTIMEPATH\vimfiles\bundle`).
+Khởi động lại Vim để dùng plugin mới. Dùng lệnh sau để cập nhật help của plugin
+mới:
+
+    :Helptags
+
 ## [Vim-Gitgutter](https://github.com/airblade/vim-gitgutter)
 
 Hiển thị `git diff` của tệp với lần `commit` cuối nơi cột trái của cửa sổ gVim.
@@ -25,6 +32,8 @@ Quản lý Git trong Vim
 ## [Syntastic](https://github.com/scrooloose/syntastic)
 
 Kiểm tra cú pháp mã nguồn các ngôn ngữ lập trình
+
+    :help syntastic
 
 ## [Trailing-Whitespace](https://github.com/bronson/vim-trailing-whitespace)
 
