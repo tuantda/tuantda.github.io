@@ -1,59 +1,75 @@
 ---
 layout: post
-title: "Cài dat Slackware 14.1 tren Dell Latitude E5410"
+title: Slackware trên Dell Latitude E5410 - Cài đặt
 published: true
-tags: [linux, slackware]
-categories: [blog]
+tags:
+  - linux
+  - slackware
+categories:
+  - blog
 ---
+*Update 12/12/2016:
+- Chuyển từ Legacy/MBR sang UEFI/GPT
+- Cài đặt Slackware với LUKS+LVM*
 
-### Cài đặt
+Slackware 14.2 đã được release. Lúc trước do có nhu dualboot Slackware với Windows 7 nên tui phải dùng Legacy/MBR cho đời đơn giản. Sau khi nâng RAM lên 8Gb, chuyển hướng các ứng dụng Windows sang máy ảo nên tui chuyển hẳn sang UEFI/GPT.
 
-#### Khởi động trình cài đặt
+Boot Slackware-x64 DVD và tiến hành phân vùng ổ đĩa với 'gdisk'
 
+    gdisk /dev/sda
+    
+Ở đây, chúng ta sẽ tạo 2 phân vùng:
 
-#### Phân vùng đĩa
+- 1 phân vùng *EFI System* dung lượng khoảng 10Mb với mã là '0800'
+- 1 phân vùng sẽ dùng cho toàn bộ *LVM* dung lượng là toàn bộ ổ đĩa còn lại với mã là '8e'
 
-Phân vùng ổ đĩa với 3 phân vùng '/', 'swap' và '/home'
-
-    fdisk /dev/sda
+[Combining LUKS and LVM](http://ftp.slackware.com/pub/slackware/slackware-14.2/README_CRYPT.TXT)
 
 #### Chọn kiểu cài đặt
 
 Cài đặt **Full** Slackware theo hướng dẫn [Slackbook -
 Install](http://www.slackbook.org/beta/#ch_install)
 
-#### Post Install
-
 Sau khi cài đặt xong, ta 'chroot' vào môi trường cài đặt để thay thế **huge**
 với **generic** kernel.
 
-Môi trường cài đặt được 'mount' tại '/mnt'
-
-    mount --bind /dev /mnt/dev
-    mount --bind /proc /mnt/proc
-    mount --bind /sys /mnt/sys
     chroot /mnt
+    
+Dùng script sau để tạo 'initrd', tích chọn vào các module cần thiết
 
-Cài đặt 'kernel-generic', 'kernel-module' và 'mkinitrd' từ thư mục
-'slackware64/a' trong DVD cài đặt Slackware
+    /usr/share/mkinitrd/mkinitrd_command_generator.sh -i > init
+    chmod +x init
+    ./init
+    
+Do phân vùng *EFI System* sẽ được mount vào '/boot/efi/EFI', ta chép 'initrd' và 'generic-kernel' vào thư mục này:
 
-    mount -t iso9660 /dev/sr0 /mnt/dvd
-    cd /mnt/dvd/slackware64/a
-    installpkg kernel-generic-$VERSION.txz
-    installpkg kernel-module-$VERSION.txz
-    installpkg mkinitrd-$VERSION.txz
+    cp -rfv /boot/initrd.gz /boot/efi/EFI/Slackware
+    cp -rfv /boot/vmlinuz-generic-4.4.14 /boot/efi/EFI/Slackware
+    
+Chỉnh sửa '/boot/efi/EFI/Slackware/elilo.conf' để *elilo* biết sử dụng kernel 'generic':
 
-Chuyển vào thư mục '/boot'
-
-    cd /boot
-
-Tiến hành tạo 'initrd' (initial ramdisk) theo filesystem là 'ext4' và phân vùng
-root '/' nằm trên '/dev/sda3'
-
-    mkinitrd -c -k 3.10.17-smp -m ext4 -f ext4 -r /dev/sda3
+    default=generic
+    prompt
+    chooser=simple
+    timeout=60
+    # huge
+        label=huge
+        image=vmlinuz
+        initrd=initrd.gz
+        append="resume=/dev/mapper-swap"
+        read-only
+        append="root=/dev/slack/root vga=normal ro"
+        
+    # generic
+        label=generic
+        image=vmlinuz-generic-4.4.14
+        initrd=initrd.gz
+        append="resume=/dev/mapper-swap"
+        read-only
+        append="root=/dev/slack/root vga=normal ro"
 
 Tham khảo [Slackware initrd mini
-HOWTO](http://mirrors.slackware.com/slackware/slackware-14.1/README.initrd)
+HOWTO](http://mirrors.slackware.com/slackware/slackware-14.2/README.initrd)
 
 Khởi động lại để hoàn tất cài đặt
 
@@ -72,7 +88,7 @@ sẽ cài đặt driver 'wl' của Broadcom.
     usermod -a -G netdev tài-khoản
 
 Tạo gói cài đặt theo mã SlackBuild và mã nguồn 'broadcom-sta' từ
-[SlackBuild.org](slackbuild.org) và cài đặt.
+[SlackBuilds.org](http://slackbuilds.org) và cài đặt.
 
 Thêm các driver sau vào '/etc/modprobe.d/blacklist.conf' để không xung đột với
 driver 'wl' mới:
