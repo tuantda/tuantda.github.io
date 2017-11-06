@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wrt on tuantda@hugo</title>
+    <link>/tags/wrt/</link>
+    <description>Recent content in Wrt on tuantda@hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 15 Jun 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/wrt/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OpenWRT Basic Setup</title>
+      <link>/post/openwrt-setup/</link>
+      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/post/openwrt-setup/</guid>
+      <description>First Login Telnet Default, dropbear (SSH service) doesn&amp;rsquo;t accept any connections at firstlogin, we can use telnet to connect to router via default IP address:
+telnet 192.168.1.1 passwd exit After we set a password for OpenWRT, telnet deamon will be disabled. We can login again with ssh ssh root@192.168.1.1
+LuCI Open your browser and connect to the router at its default address (usually 192.168.1.1). Login using username root with an empty password.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on tuantda@hugo</title>
+    <link>/tags/git/</link>
+    <description>Recent content in Git on tuantda@hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 03 Nov 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Chuyển công việc dang dở về nhà với Git</title>
+      <link>/post/git-reset-keep-changes/</link>
+      <pubDate>Mon, 03 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/git-reset-keep-changes/</guid>
+      <description>Nhu cầu là tui cần chuyển các công việc dang dở ở công ty về nhà làm tiếp nhưng lại không muốn public những thay đổi này.
+Quy tắc là nhánh master luôn sạch vì vậy các công việc của chúng ta luôn diễn ra ở nhánh chức năng.
+Tại công ty, tạo một commit tạm thời chứa tất cả những công việc dang dở muốn đem về nhà trong nhánh chuaxong và push lên remote work</description>
+    </item>
+    
+    <item>
+      <title>Làm việc với Git</title>
+      <link>/post/git-everyday-use/</link>
+      <pubDate>Wed, 12 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/post/git-everyday-use/</guid>
+      <description>Git là phần mềm quản lý mã nguồn phân tán được phát triển bởi Linus Torvalds dành cho việc phát triển Linux kernel.
+Qui trình Git cơ bản Dữ liệu trong repository được Git quản lý theo ba tree: Working Directory, Index (stage) và HEAD (commit) 1 theo qui trình sau:
+Các lệnh dùng trong qui trình Đây là một Git workflow đơn giản với các nguyên tắc cơ bản 2:</description>
+    </item>
+    
+  </channel>
+</rss>

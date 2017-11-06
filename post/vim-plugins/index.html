@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-	<meta name="generator" content="Hugo 0.30.2" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer">
-    <base href="./">
+    <base href="../../">
     
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400' rel='stylesheet' type='text/css'>
 
-    <link rel="icon" type="image/png" href="./favicon_16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="./favicon_32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="./favicon_128x128.png" sizes="128x128">
+    <link rel="icon" type="image/png" href="../../favicon_16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../../favicon_32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../../favicon_128x128.png" sizes="128x128">
 
     <title>
       
       
-         tuantda@hugo 
+         Vim 8 Native plugin manager 
       
     </title>
-    <link rel="canonical" href="./">
+    <link rel="canonical" href="../../post/vim-plugins/">
 
     <style>
   * {
@@ -417,128 +416,114 @@
 
 
     
-      <link href="./index.xml" rel="alternate" type="application/rss+xml" title="tuantda@hugo" />
-    
   </head>
 
   <body>
     <section id=nav>
-      <h1><a href="./">tail -f mind &gt;&gt; log</a></h1>
+      <h1><a href="../../">tail -f mind &gt;&gt; log</a></h1>
       <ul>
         
-          <li><a href="./">home</a></li>
+          <li><a href="../../">home</a></li>
         
-          <li><a href="./tags/">tags</a></li>
+          <li><a href="../../tags/">tags</a></li>
         
       </ul>
     </section>
 
 
 <section id=content>
-  <ul class=posts_listing>
+  <h1> Vim 8 Native plugin manager </h1>
+
+  <div id=sub-header>
+    November 11 2014 · 1 minute read · 
+    <span class="tags">
+      
+        
+          
+            <a class="tags" href="../../tags/vim">vim</a>
+          
+        
+      
+    </span>
+  </div>
+
+  <div class="entry-content">
     
-    <section>
-      <h2>2016</h2>
 
-      <ol>
-        <li>
-          <time datetime="2016-07-26 00:00:00 UTC">Jul 26</time>
-          <a href="./post/gimp-everyday-usage/">Gimp Everyday Usage</a>
-        </li>
-      </ol>
-    </section>
-    <section>
-      <h2>2015</h2>
+<p><em>Update</em>: VIM 8</p>
 
-      <ol>
-        <li>
-          <time datetime="2015-06-15 00:00:00 UTC">Jun 15</time>
-          <a href="./post/openwrt-setup/">OpenWRT Basic Setup</a>
-        </li><li>
-          <time datetime="2015-02-02 00:00:00 UTC">Feb 02</time>
-          <a href="./post/rename-usb-drive/">Đổi tên ổ đĩa USB trên Linux</a>
-        </li><li>
-          <time datetime="2015-02-01 00:00:00 UTC">Feb 01</time>
-          <a href="./post/slackware-config/">Cấu hình Slackware</a>
-        </li><li>
-          <time datetime="2015-01-24 00:00:00 UTC">Jan 24</time>
-          <a href="./post/slackware-on-latitude/">Slackware trên Dell Latitude E5410 - Cài đặt</a>
-        </li>
-      </ol>
-    </section>
-    <section>
-      <h2>2014</h2>
+<h2 id="pathogen-https-github-com-tpope-vim-pathogen"><a href="https://github.com/tpope/vim-pathogen">Pathogen</a></h2>
 
-      <ol>
-        <li>
-          <time datetime="2014-11-20 00:00:00 UTC">Nov 20</time>
-          <a href="./post/find-sed/">Mẹo với find và sed</a>
-        </li><li>
-          <time datetime="2014-11-19 00:00:00 UTC">Nov 19</time>
-          <a href="./post/vim-plugins/">Vim 8 Native plugin manager</a>
-        </li><li>
-          <time datetime="2014-11-03 00:00:00 UTC">Nov 03</time>
-          <a href="./post/git-reset-keep-changes/">Chuyển công việc dang dở về nhà với Git</a>
-        </li><li>
-          <time datetime="2014-10-20 00:00:00 UTC">Oct 20</time>
-          <a href="./post/vim-on-windows/">Cài đặt gVim trên Windows 7</a>
-        </li><li>
-          <time datetime="2014-10-10 00:00:00 UTC">Oct 10</time>
-          <a href="./post/vim-motion/">Trò chuyện cùng Vim</a>
-        </li><li>
-          <time datetime="2014-07-24 00:00:00 UTC">Jul 24</time>
-          <a href="./post/nix-tips/">NIX Tips</a>
-        </li><li>
-          <time datetime="2014-07-01 00:00:00 UTC">Jul 01</time>
-          <a href="./post/context-howto/">Các ghi nhớ về ConTeXt</a>
-        </li><li>
-          <time datetime="2014-03-30 00:00:00 UTC">Mar 30</time>
-          <a href="./post/osx/">Linh tinh về OSX</a>
-        </li>
-      </ol>
-    </section>
-    <section>
-      <h2>2013</h2>
+<p>Plugin quản lý <code>$VIMRUNTIME</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">execute pathogen#infect()
+execute pathogen#helptags()</pre></div>
+<p>Để cài đặt một plugin, ta <code>clone</code> hoặc giải nén vào thư mục <code>$VIM/bundle</code>
+(trên Windows là <code>$RUNTIMEPATH\vimfiles\bundle</code>).
+Khởi động lại Vim để dùng plugin mới. Dùng lệnh sau để cập nhật help của plugin
+mới:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">:Helptags</pre></div>
+<h2 id="vim-gitgutter-https-github-com-airblade-vim-gitgutter"><a href="https://github.com/airblade/vim-gitgutter">Vim-Gitgutter</a></h2>
 
-      <ol>
-        <li>
-          <time datetime="2013-05-01 00:00:00 UTC">May 01</time>
-          <a href="./post/using-curl/">Sử dụng cURL</a>
-        </li>
-      </ol>
-    </section>
-    <section>
-      <h2>2012</h2>
+<p>Hiển thị <code>git diff</code> của tệp với lần <code>commit</code> cuối nơi cột trái của cửa sổ gVim.</p>
 
-      <ol>
-        <li>
-          <time datetime="2012-11-08 00:00:00 UTC">Nov 08</time>
-          <a href="./post/markdown-cheatsheet/">Cú pháp markdown</a>
-        </li>
-      </ol>
-    </section>
-    <section>
-      <h2>2011</h2>
+<h2 id="fugitive-https-github-com-tpope-vim-fugitive"><a href="https://github.com/tpope/vim-fugitive">Fugitive</a></h2>
 
-      <ol>
-        <li>
-          <time datetime="2011-09-25 00:00:00 UTC">Sep 25</time>
-          <a href="./post/vim-spell/">Kiểm tra chính tả tiếng Việt trong Vim</a>
-        </li><li>
-          <time datetime="2011-05-20 00:00:00 UTC">May 20</time>
-          <a href="./post/vim-basic/">Mẹo dùng Vim</a>
-        </li><li>
-          <time datetime="2011-01-12 00:00:00 UTC">Jan 12</time>
-          <a href="./post/git-everyday-use/">Làm việc với Git</a>
-        </li>
-      </ol>
-    </section>
+<p>Quản lý Git trong Vim</p>
+
+<p><code>Gstatus</code></p>
+
+<h2 id="syntastic-https-github-com-scrooloose-syntastic"><a href="https://github.com/scrooloose/syntastic">Syntastic</a></h2>
+
+<p>Kiểm tra cú pháp mã nguồn các ngôn ngữ lập trình</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">:help syntastic</pre></div>
+<h2 id="trailing-whitespace-https-github-com-bronson-vim-trailing-whitespace"><a href="https://github.com/bronson/vim-trailing-whitespace">Trailing-Whitespace</a></h2>
+
+<p>Hiển thị các khoảng trắng cuối dòng bằng màu đỏ.</p>
+
+<p>Để xóa các khoảng trắng thừa đó, dùng lệnh:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">:FixWhitespace</pre></div>
+<h2 id="supertab-https-github-com-ervandew-supertab"><a href="https://github.com/ervandew/supertab">SuperTab</a></h2>
+
+<p>tab completetion</p>
+
+<h2 id="autoclose-https-github-com-townk-vim-autoclose"><a href="https://github.com/Townk/vim-autoclose">AutoClose</a></h2>
+
+<p>Tự động chèn kí tự đóng</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;Leader&gt;a</pre></div>
+<h2 id="tabular-https-github-com-godlygeek-tabular"><a href="https://github.com/godlygeek/tabular">Tabular</a></h2>
+
+<p>Gióng hàng theo kí tự</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">:Tabularize /,/r1c1l0
+
+        Some short phrase , some other phrase
+A much longer phrase here , and another long phrase</pre></div>
+<h2 id="easy-align-https-github-com-junegunn-vim-easy-align"><a href="https://github.com/junegunn/vim-easy-align">Easy-Align</a></h2>
+
+<p>Tiện ích gióng hàng đơn giản và tiện lợi</p>
+
+<p>apple   =red
+grass+=green
+sky-=   blue</p>
+
+<p>Chọn đoạn trên với lệnh <code>vip</code>, nhấn <code>Enter</code> để dùng lệnh, nhấn <code>=</code> để gióng
+đoạn theo dấu <code>=</code> hoặc nhấn <code>Enter</code> để chọn kiểu gióng (<code>R</code>ight, <code>C</code>enter) và
+nhấn <code>Space</code> để gióng hàng</p>
+
+  </div>
+
+  <div id=links>
     
-  </ul>
+      <a class="basic-alignment left" href="../../post/git-reset-keep-changes/">&laquo; Chuyển công việc dang dở về nhà với Git</a>
+    
+    
+      <a class="basic-alignment left" href="../../post/find-sed/">Mẹo với find và sed &raquo;</a>
+    
+  </div>
 </section>
 
   
 </body>
 </html>
+
 
 

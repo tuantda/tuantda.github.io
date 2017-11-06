@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <base href="../../">
+    
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400' rel='stylesheet' type='text/css'>
+
+    <link rel="icon" type="image/png" href="../../favicon_16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../../favicon_32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../../favicon_128x128.png" sizes="128x128">
+
+    <title>
+      
+      
+         Cú pháp markdown 
+      
+    </title>
+    <link rel="canonical" href="../../post/markdown-cheatsheet/">
+
+    <style>
+  * {
+    border:0;
+    font:inherit;
+    font-size:100%;
+    vertical-align:baseline;
+    margin:0;
+    padding:0;
+    color: black;
+    text-decoration-skip: ink;
+  }
+
+  body {
+    font-family:'Open Sans', 'Myriad Pro', Myriad, sans-serif;
+    font-size:17px;
+    line-height:160%;
+    color:#1d1313;
+    max-width:700px;
+    margin:auto;
+  }
+
+  p {
+    margin: 20px 0;
+  }
+
+  a img {
+    border:none;
+  }
+
+  img {
+    margin: 10px auto 10px auto;
+    max-width: 100%;
+    display: block;
+  }
+
+  .left-justify {
+    float: left;
+  }
+
+  .right-justify {
+    float:right;
+  }
+
+  pre, code {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    background-color: #f7f7f7;
+  }
+
+  code {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+    word-wrap: normal;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+  }
+
+  pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+  }
+
+  pre code {
+    display: inline;
+    max-width: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+  }
+
+  pre code::before,
+  pre code::after {
+    content: normal;
+  }
+
+  em,q,em,dfn {
+    font-style:italic;
+  }
+
+  .sans,html .gist .gist-file .gist-meta {
+    font-family:"Open Sans","Myriad Pro",Myriad,sans-serif;
+  }
+
+  .mono,pre,code,tt,p code,li code {
+    font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+  }
+
+  .heading,.serif,h1,h2,h3 {
+    font-family:"Old Standard TT",serif;
+  }
+
+  strong {
+    font-weight:600;
+  }
+
+  q:before {
+    content:"\201C";
+  }
+
+  q:after {
+    content:"\201D";
+  }
+
+  del,s {
+    text-decoration:line-through;
+  }
+
+  blockquote {
+    font-family:"Old Standard TT",serif;
+    text-align:center;
+    padding:50px;
+  }
+
+  blockquote p {
+    display:inline-block;
+    font-style:italic;
+  }
+
+  blockquote:before,blockquote:after {
+    font-family:"Old Standard TT",serif;
+    content:'\201C';
+    font-size:35px;
+    color:#403c3b;
+  }
+
+  blockquote:after {
+    content:'\201D';
+  }
+
+  hr {
+    width:40%;
+    height: 1px;
+    background:#403c3b;
+    margin: 25px auto;
+  }
+
+  h1 {
+    font-size:35px;
+  }
+
+  h2 {
+    font-size:28px;
+  }
+
+  h3 {
+    font-size:22px;
+    margin-top:18px;
+  }
+
+  h1 a,h2 a,h3 a {
+    text-decoration:none;
+  }
+
+  h1,h2 {
+    margin-top:28px;
+  }
+
+  #sub-header, time {
+    color:#403c3b;
+    font-size:13px;
+  }
+
+  #sub-header {
+    margin: 0 4px;
+  }
+
+  #nav h1 a {
+    font-size:35px;
+    color:#1d1313;
+    line-height:120%;
+  }
+
+  .posts_listing a,#nav a {
+    text-decoration: none;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  ul li {
+    margin-left: 5px;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+   
+   
+   
+
+  #nav ul li:before, .posts_listing li:before {
+    content:'';
+    margin-right:0;
+  }
+
+  #content {
+    text-align:left;
+    width:100%;
+    font-size:15px;
+    padding:60px 0 80px;
+  }
+
+  #content h1,#content h2 {
+    margin-bottom:5px;
+  }
+
+  #content h2 {
+    font-size:25px;
+  }
+
+  #content .entry-content {
+    margin-top:15px;
+  }
+
+  #content time {
+    margin-left:3px;
+  }
+
+  #content h1 {
+    font-size:30px;
+  }
+
+  .highlight {
+    margin: 10px 0;
+  }
+
+  .posts_listing {
+    margin:0 0 50px;
+  }
+
+  .posts_listing li {
+    margin:0 0 25px 15px;
+  }
+
+  .posts_listing li a:hover,#nav a:hover {
+    text-decoration: underline;
+  }
+
+  #nav {
+    text-align:center;
+    position:static;
+    margin-top:60px;
+  }
+
+  #nav ul {
+    display: table;
+    margin: 8px auto 0 auto;
+  }
+
+  #nav li {
+    list-style-type:none;
+    display:table-cell;
+    font-size:15px;
+    padding: 0 20px;
+  }
+
+  #links {
+    margin: 50px 0 0 0;
+  }
+
+  #links :nth-child(2) {
+    float:right;
+  }
+
+  #not-found {
+    text-align: center;
+  }
+
+  #not-found a {
+    font-family:"Old Standard TT",serif;
+    font-size: 200px;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 225px;
+  }
+
+  @media (max-width: 750px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:28px;
+    }
+
+    #nav li {
+      font-size:13px;
+      padding: 0 15px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:50px;
+      font-size:14px;
+    }
+
+    #content h1 {
+      font-size:25px;
+    }
+
+    #content h2 {
+      font-size:22px;
+    }
+
+    .posts_listing li div {
+      font-size:12px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:22px;
+    }
+
+    #nav li {
+      font-size:12px;
+      padding: 0 10px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:20px;
+      font-size:12px;
+    }
+
+    #content h1 {
+      font-size:20px;
+    }
+
+    #content h2 {
+      font-size:18px;
+    }
+
+    .posts_listing li div{
+      font-size:12px;
+    }
+  }
+  
+  
+  .tags {
+    list-style: none;
+    padding: 0;
+    text-align: justify;
+    font-size: 14px;
+  }
+
+  .tags li {
+    display: inline-block;
+    margin: 0 20px 20px 0;
+  }
+
+  .tags a {
+    text-decoration: none;
+  }
+
+  .tags a:hover {
+    text-decoration: underline;
+  }
+
+  .tags a:after {
+    content: ", ";
+  }
+
+  .tags a:last-child:after {
+    content: "";
+  }
+</style>
+
+
+    
+  </head>
+
+  <body>
+    <section id=nav>
+      <h1><a href="../../">tail -f mind &gt;&gt; log</a></h1>
+      <ul>
+        
+          <li><a href="../../">home</a></li>
+        
+          <li><a href="../../tags/">tags</a></li>
+        
+      </ul>
+    </section>
+
+
+<section id=content>
+  <h1> Cú pháp markdown </h1>
+
+  <div id=sub-header>
+    November 11 2012 · 5 minute read · 
+    <span class="tags">
+      
+        
+          
+            <a class="tags" href="../../tags/markdown">markdown</a>
+          
+        
+      
+    </span>
+  </div>
+
+  <div class="entry-content">
+    
+
+<p>Markdown là ngôn ngữ đánh dấu đơn giản, tạo thuận tiện cho việc chuyển đổi từ
+văn bản thuần sang HTML. Đây là bản cú pháp markdown thần chưởng</p>
+
+<h2 id="header">Tiêu đề (Header):</h2>
+
+<p>Một tiêu đề của đoạn văn được bắt đầu bằng <em>dấu thăng</em> (<code>#</code>). Số lượng dấu thăng
+thể hiện cấp độ của tiêu đề và không nhiều hơn sáu.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"># Tiêu đề 1
+## Tiêu đề 2
+### Tiêu đề 3 ###  (Dấu thăng # bên phải là tuỳ ý)</pre></div>
+<p>và khi tạo tiêu đề với ID như thế này:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">## Tiêu đề {#id}</pre></div>
+<p>sẽ tạo được liên kết đến tiêu đề đó:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">[Liên kết đến tiêu đề có ID](#id)</pre></div>
+<p><strong>Ghi chú:</strong> <em>kramdown</em> và <em>maruku</em> hỗ trợ tạo bảng nội dung (table of content)
+dựa trên các tiêu đề khi biên dịch sang HTML bằng cách thêm vào đoạn mã sau vào
+đầu bài viết:
+{: .notice}</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">* Bảng nội dung
+{:toc}</pre></div>
+<h2 id="paragraph">Đoạn văn (Paragraph):</h2>
+
+<p>Một đoạn văn bao gồm một dòng hoặc nhiều dòng.</p>
+
+<p>Trong đoạn văn có thể có khoảng      trắng hoặc     tab. Các đoạn văn ngăn cách
+nhau bằng một dòng trắng.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Một đoạn văn bao gồm một dòng hoặc nhiều dòng.
+
+Trong đoạn văn có thể có khoảng      trắng hoặc     tab. Các đoạn văn ngăn cách
+nhau bằng một dòng trắng.</pre></div>
+<p>Đoạn văn có thể được xuống dòng bằng cách thêm <em>hai khoảng trắng</em> hoặc
+<em>hai dấu gạch chéo ngược</em> (<code>\\</code>) vào cuối dòng như trong bài thơ sau:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Quê hương là chùm kế ngọt\\
+Cho con trèo hái mỗi ngày  
+Quê hương là đường đi học\\
+Con về rợp bóng cò bay.</pre></div>
+<h2 id="quote">Đoạn trích dẫn (Blockquote)</h2>
+
+<p>Đoạn trích dẫn được bắt đầu với <em>kí tự trích dẫn phải</em> (<code>&gt;</code>) tại đầu mỗi dòng
+như khi trả lời email hay chỉ dòng đầu tiên  và có thể được lồng vào nhau.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&gt; đây là đoạn
+trích dẫn.
+&gt;
+&gt; &gt; được lồng vào nhau
+thế này.</pre></div>
+<blockquote>
+<p>đây là đoạn
+trích dẫn.</p>
+
+<blockquote>
+<p>được lồng vào nhau
+thế này.</p>
+</blockquote>
+</blockquote>
+
+<h2 id="code">Khối mã (Code block)</h2>
+
+<p>Các đoạn mã được trình bày bằng cách thêm <em>bốn khoảng trắng</em> tại đầu mỗi
+dòng mã (standard code block):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">    Dòng mã 1
+    Dòng mã 2
+    Dòng mã 3</pre></div>
+<p>hoặc thêm các dấu ngã <code>~</code> (&gt;=3) vào dòng trên và dòng dưới đoạn mã (fenced code
+block):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">~~~
+Dòng mã 1
+Dòng mã 2
+Dòng mã 3
+~~~</pre></div>
+<p>Một đoạn mã với ngôn ngữ xác định:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">~~~ ruby
+def what?
+    42
+end
+~~~</pre></div>
+<p><strong>Ghi chú:</strong> để định dạng mã trong câu văn (inline code), ta dùng dấu <code>`</code> bao
+quanh phần mã như thế này <code>`inline code`</code></p>
+
+<h2 id="hr">Đường kẻ ngang (Horizontal rule)</h2>
+
+<p>Dùng ba dấu sao, dấu gạch ngang, dấu gạch chân viết liền hoặc cách nhau
+khoảng trắng:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">***
+* * *
+---
+- - -
+___
+_ _ _</pre></div>
+<hr />
+
+<hr />
+
+<hr />
+
+<hr />
+
+<hr />
+
+<hr />
+
+<h2 id="list">Danh sách (List)</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">* Danh sách với kí tự sao
+- Hoặc dấu trừ
++ Và dấu cộng</pre></div>
+<ul>
+<li>Danh sách với kí tự sao</li>
+<li>Hoặc dấu trừ</li>
+<li>Và dấu cộng</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">1. Danh sách với số
+2. Gồm số
+3. Đi sau đó là dấu chấm và khoảng trắng
+    1. Đây là
+    2. danh sách con
+69. Danh sách tự động đánh số tiếp theo</pre></div>
+<ol>
+<li>Danh sách với số</li>
+<li>Gồm số</li>
+<li>Đi sau đó là dấu chấm và khoảng trắng
+
+<ol>
+<li>Đây là</li>
+<li>danh sách con</li>
+</ol></li>
+<li>Danh sách tự động đánh số tiếp theo</li>
+</ol>
+
+<h2 id="definition">Danh sách định nghĩa (Definition list)</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Rượu
+: nho
+: vang</pre></div>
+<dl>
+<dt>Rượu</dt>
+<dd>nho</dd>
+<dd>vang</dd>
+</dl>
+
+<h2 id="table">Bảng (Table)</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">| Header | Header | Right  |
+|:-------|:------:|-------:|
+|  Cell  |  Cell  |   $10  |
+|  Cell  |  Cell  |   $20  |
+| ====== | ====== | =====: |
+| Footer | Footer | Footer |</pre></div>
+<table>
+<thead>
+<tr>
+<th align="left">Header</th>
+<th align="center">Header</th>
+<th align="right">Right</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">Cell</td>
+<td align="center">Cell</td>
+<td align="right">$10</td>
+</tr>
+
+<tr>
+<td align="left">Cell</td>
+<td align="center">Cell</td>
+<td align="right">$20</td>
+</tr>
+
+<tr>
+<td align="left">======</td>
+<td align="center">======</td>
+<td align="right">=====:</td>
+</tr>
+
+<tr>
+<td align="left">Footer</td>
+<td align="center">Footer</td>
+<td align="right">Footer</td>
+</tr>
+</tbody>
+</table>
+
+<ul>
+<li>Kí tự <code>|</code> bắt đầu một hàng</li>
+<li>Kí tự <code>-</code> tách phần header của bảng</li>
+<li>Kí tự <code>=</code> tách phần footer</li>
+<li>Kí tự <code>:</code> gióng hàng trong cột (trái, phải hoặc 2 bên là gióng giữa)</li>
+</ul>
+
+<h2 id="emphasis">Nhấn mạnh chữ (Emphasis)</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Đây là *chữ in nghiêng* và đây cũng _in nghiêng_
+
+Đây là **chữ in đậm** và đây cũng __in đậm__</pre></div>
+<p>Đây là <em>chữ in nghiêng</em> và đây cũng <em>in nghiêng</em></p>
+
+<p>Đây là <strong>chữ in đậm</strong> và đây cũng <strong>in đậm</strong></p>
+
+<h2 id="link">Liên kết (Link)</h2>
+
+<p>Một <em>liên kết tự động</em> được tạo đơn giản với cặp móc nhọn (<code>&lt;</code>,<code>&gt;</code>) bao quanh
+liên kết như thế này:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;http://google.com&gt;</pre></div>
+<p><a href="http://google.com">http://google.com</a></p>
+
+<p>hoặc cầu kỳ hơn với <em>liên kết nội tuyến</em>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Đây là trang [Google](http://google.com) và đây là trang [Google với tiêu
+đề](http://google.com &#34;Trang tìm kiếm Google&#34;)</pre></div>
+<p>Đây là trang <a href="http://google.com">Google</a> và đây là trang <a href="http://google.com" title="Trang tìm kiếm Google">Google với tiêu
+đề</a></p>
+
+<p>Và đây là <em>liên kết tham chiếu</em>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Truy cập [trang tìm kiếm][Google] và đặt [Google] làm trang chủ
+
+[Google]: http://google.com &#34;google&#34;</pre></div>
+<p>Truy cập <a href="http://google.com" title="Trang tìm kiếm Google">trang tìm kiếm</a> và đặt <a href="http://google.com" title="Trang tìm kiếm Google">Google</a> làm trang chủ</p>
+
+<h2 id="image">Hình ảnh (Image)</h2>
+
+<p>Với hình ảnh cũng tương tự:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">![hoa](/images/hoa-anh-dao.jpg &#39;hoa anh đào&#39;)</pre></div>
+<p><img src="../../images/hoa-anh-dao.jpg" alt="hoa" title="hoa anh đào" /></p>
+
+<h2 id="footnote">Lời chú cuối trang (Footnote)</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Đây là một ghi chú[^1]
+
+[^1]: và đây là diễn giải footnote</pre></div>
+<p>Đây là một ghi chú<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup></p>
+
+<h2 id="abbr">Chữ viết tắt (Abbreviation)</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Đây là CVT
+
+*[CVT]: Chữ Viết Tắt</pre></div>
+<p>Đây là CVT</p>
+
+<p>*[CVT]: Chữ Viết Tắt</p>
+
+<h2 id="html">Phần tử HTML (HTML)</h2>
+
+<p>Các cặp tag HTML cũng được hỗ trợ như thế này</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;div style=&#34;float: right&#34;&gt;
+Phần câu này trôi dạt sang bờ bên phải
+&lt;/div&gt;
+
+Trong câu này, &lt;span style=&#34;color: red&#34;&gt;phần này được viết màu đỏ&lt;/span&gt;, *phần
+này màu xanh in nghiêng*{: style=&#34;color: blue&#34;}</pre></div>
+<div style="float: right">
+Phần câu này trôi dạt sang bờ bên phải
+</div>
+
+<p>Trong câu này, <span style="color: red">phần này được viết màu đỏ</span>, <em>phần
+này màu xanh in nghiêng</em>{: style=&ldquo;color: blue&rdquo;}</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">và đây là diễn giải footnote
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+  </div>
+
+  <div id=links>
+    
+      <a class="basic-alignment left" href="../../post/vim-spell/">&laquo; Kiểm tra chính tả tiếng Việt trong Vim</a>
+    
+    
+      <a class="basic-alignment left" href="../../post/using-curl/">Sử dụng cURL &raquo;</a>
+    
+  </div>
+</section>
+
+  
+</body>
+</html>
+
+
+

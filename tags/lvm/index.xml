@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lvm on tuantda@hugo</title>
+    <link>/tags/lvm/</link>
+    <description>Recent content in Lvm on tuantda@hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 24 Jan 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/lvm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Slackware trên Dell Latitude E5410 - Cài đặt</title>
+      <link>/post/slackware-on-latitude/</link>
+      <pubDate>Sat, 24 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/post/slackware-on-latitude/</guid>
+      <description>*Update 12/12/2016:
+ Chuyển từ Legacy/MBR sang UEFI/GPT Cài đặt Slackware với LUKS+LVM*  Slackware 14.2 đã được release. Lúc trước do có nhu dualboot Slackware với Windows 7 nên tui phải dùng Legacy/MBR cho đời đơn giản. Sau khi nâng RAM lên 8Gb, chuyển hướng các ứng dụng Windows sang máy ảo nên tui chuyển hẳn sang UEFI/GPT.
+Boot Slackware-x64 DVD và tiến hành phân vùng ổ đĩa với &amp;lsquo;gdisk&amp;rsquo;</description>
+    </item>
+    
+  </channel>
+</rss>

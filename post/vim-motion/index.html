@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-	<meta name="generator" content="Hugo 0.30.2" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer">
-    <base href="./">
+    <base href="../../">
     
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400' rel='stylesheet' type='text/css'>
 
-    <link rel="icon" type="image/png" href="./favicon_16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="./favicon_32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="./favicon_128x128.png" sizes="128x128">
+    <link rel="icon" type="image/png" href="../../favicon_16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../../favicon_32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../../favicon_128x128.png" sizes="128x128">
 
     <title>
       
       
-         tuantda@hugo 
+         Trò chuyện cùng Vim 
       
     </title>
-    <link rel="canonical" href="./">
+    <link rel="canonical" href="../../post/vim-motion/">
 
     <style>
   * {
@@ -417,128 +416,92 @@
 
 
     
-      <link href="./index.xml" rel="alternate" type="application/rss+xml" title="tuantda@hugo" />
-    
   </head>
 
   <body>
     <section id=nav>
-      <h1><a href="./">tail -f mind &gt;&gt; log</a></h1>
+      <h1><a href="../../">tail -f mind &gt;&gt; log</a></h1>
       <ul>
         
-          <li><a href="./">home</a></li>
+          <li><a href="../../">home</a></li>
         
-          <li><a href="./tags/">tags</a></li>
+          <li><a href="../../tags/">tags</a></li>
         
       </ul>
     </section>
 
 
 <section id=content>
-  <ul class=posts_listing>
+  <h1> Trò chuyện cùng Vim </h1>
+
+  <div id=sub-header>
+    October 10 2014 · 2 minute read · 
+    <span class="tags">
+      
+        
+          
+            <a class="tags" href="../../tags/vim">vim</a>
+          
+        
+      
+    </span>
+  </div>
+
+  <div class="entry-content">
+    <p>Vim có một bộ các từ mô tả các <em>verb (hành động)</em>, <em>modifier (bổ nghĩa)</em> và
+<em>object (đối tượng)</em> rất dễ nhớ. Khi kết hợp các từ này với nhau, ta sẽ tận
+dụng được sức mạnh của Vim để giảm thiểu những công việc nhàm chán lặp đi lặp
+lại hàng ngày. Điều đặc biệt là việc kết hợp này sẽ trở thành các câu trò
+chuyện thú vị giữa chúng ta và Vim với cấu trúc ngữ pháp sau:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">hành động - bổ nghĩa - đối tượng</pre></div>
+<p>Đây là một số bộ từ của Vim:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">verb     : visual, change, delete, yank, repalce
+modifier : inside, around, till, find, /
+object   : word, sentence, paragraph, block</pre></div>
+<p>Bây giờ, hãy tưởng tượng bạn đang làm việc cùng cô trợ lý xinh đẹp và tài năng
+Vim. Thay vì chúng ta cầm tay chỉ việc, nghĩa là nhấn phím này, phím kia lặp đi
+lặp lại thì hãy nói ra ý muốn của mình để cô trợ lý tài năng xử lý cho chúng
+ta.</p>
+
+<p>Một ví dụ đơn giản, để xóa một câu trong một đoạn, chúng ta sẽ làm gì? Nhấn <code>v</code>
+để chọn, dùng phím trái, phải để chọn toàn bộ câu và nhấn <code>d</code> để xóa. Bây giờ
+chúng ta chỉ đơn giản bảo &ldquo;hãy xóa toàn bộ câu&rdquo; (<code>d</code>elete <code>a</code>round <code>s</code>entence):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">das</pre></div>
+<p>Một ví dụ khác, để sửa đổi câu &ldquo;hãy xóa toàn bộ câu&rdquo;, ta hãy bảo Vim &ldquo;sửa đổi
+bên trong dấu <code>&quot;</code>&rdquo; (<code>c</code>hange <code>i</code>nside <code>&quot;</code>) và nhập thông tin sửa đổi.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">ci&#34;</pre></div>
+<p>và <code>vap</code> để chọn toàn đoạn trên thay vì dùng <code>V</code> và phím lên, xuống để chọn.</p>
+
+<p>Để tạo một dòng 72 kí tự <code>&quot;</code> thế này trong <code>vimrc</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;&#34;</pre></div>
+<p>ta nhấn <code>i</code> và lặp đi lặp lại nhập kí tự <code>&quot;</code> 72 lần hay chỉ đơn giản bảo Vim
+&ldquo;nhập kí tự <code>&quot;</code> 72 lần&rdquo; như thế này:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">79i&#34;&lt;Esc&gt;</pre></div>
+<p>Dài dòng hơn nữa, ta sẽ bảo Vim tạo header trong markdown thế này</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Trò chuyện cùng Vim
+===================</pre></div>
+<p>Việc đầu tiên, chúng ta gõ:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Trò chuyện cùng Vim</pre></div>
+<p>và bảo Vim <code>Y</code>ank (copy) dòng trên, <code>p</code>aste (dán) xuống dưới, <code>V</code>isual (chọn)
+dòng dưới này và <code>r</code>eplace (thay thế) với dấu <code>=</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">YpVr=</pre></div>
+<p>Xin vui lòng đọc tài liệu <code>:help motion.txt</code> để hiểu rõ hơn.</p>
+
+  </div>
+
+  <div id=links>
     
-    <section>
-      <h2>2016</h2>
-
-      <ol>
-        <li>
-          <time datetime="2016-07-26 00:00:00 UTC">Jul 26</time>
-          <a href="./post/gimp-everyday-usage/">Gimp Everyday Usage</a>
-        </li>
-      </ol>
-    </section>
-    <section>
-      <h2>2015</h2>
-
-      <ol>
-        <li>
-          <time datetime="2015-06-15 00:00:00 UTC">Jun 15</time>
-          <a href="./post/openwrt-setup/">OpenWRT Basic Setup</a>
-        </li><li>
-          <time datetime="2015-02-02 00:00:00 UTC">Feb 02</time>
-          <a href="./post/rename-usb-drive/">Đổi tên ổ đĩa USB trên Linux</a>
-        </li><li>
-          <time datetime="2015-02-01 00:00:00 UTC">Feb 01</time>
-          <a href="./post/slackware-config/">Cấu hình Slackware</a>
-        </li><li>
-          <time datetime="2015-01-24 00:00:00 UTC">Jan 24</time>
-          <a href="./post/slackware-on-latitude/">Slackware trên Dell Latitude E5410 - Cài đặt</a>
-        </li>
-      </ol>
-    </section>
-    <section>
-      <h2>2014</h2>
-
-      <ol>
-        <li>
-          <time datetime="2014-11-20 00:00:00 UTC">Nov 20</time>
-          <a href="./post/find-sed/">Mẹo với find và sed</a>
-        </li><li>
-          <time datetime="2014-11-19 00:00:00 UTC">Nov 19</time>
-          <a href="./post/vim-plugins/">Vim 8 Native plugin manager</a>
-        </li><li>
-          <time datetime="2014-11-03 00:00:00 UTC">Nov 03</time>
-          <a href="./post/git-reset-keep-changes/">Chuyển công việc dang dở về nhà với Git</a>
-        </li><li>
-          <time datetime="2014-10-20 00:00:00 UTC">Oct 20</time>
-          <a href="./post/vim-on-windows/">Cài đặt gVim trên Windows 7</a>
-        </li><li>
-          <time datetime="2014-10-10 00:00:00 UTC">Oct 10</time>
-          <a href="./post/vim-motion/">Trò chuyện cùng Vim</a>
-        </li><li>
-          <time datetime="2014-07-24 00:00:00 UTC">Jul 24</time>
-          <a href="./post/nix-tips/">NIX Tips</a>
-        </li><li>
-          <time datetime="2014-07-01 00:00:00 UTC">Jul 01</time>
-          <a href="./post/context-howto/">Các ghi nhớ về ConTeXt</a>
-        </li><li>
-          <time datetime="2014-03-30 00:00:00 UTC">Mar 30</time>
-          <a href="./post/osx/">Linh tinh về OSX</a>
-        </li>
-      </ol>
-    </section>
-    <section>
-      <h2>2013</h2>
-
-      <ol>
-        <li>
-          <time datetime="2013-05-01 00:00:00 UTC">May 01</time>
-          <a href="./post/using-curl/">Sử dụng cURL</a>
-        </li>
-      </ol>
-    </section>
-    <section>
-      <h2>2012</h2>
-
-      <ol>
-        <li>
-          <time datetime="2012-11-08 00:00:00 UTC">Nov 08</time>
-          <a href="./post/markdown-cheatsheet/">Cú pháp markdown</a>
-        </li>
-      </ol>
-    </section>
-    <section>
-      <h2>2011</h2>
-
-      <ol>
-        <li>
-          <time datetime="2011-09-25 00:00:00 UTC">Sep 25</time>
-          <a href="./post/vim-spell/">Kiểm tra chính tả tiếng Việt trong Vim</a>
-        </li><li>
-          <time datetime="2011-05-20 00:00:00 UTC">May 20</time>
-          <a href="./post/vim-basic/">Mẹo dùng Vim</a>
-        </li><li>
-          <time datetime="2011-01-12 00:00:00 UTC">Jan 12</time>
-          <a href="./post/git-everyday-use/">Làm việc với Git</a>
-        </li>
-      </ol>
-    </section>
+      <a class="basic-alignment left" href="../../post/nix-tips/">&laquo; NIX Tips</a>
     
-  </ul>
+    
+      <a class="basic-alignment left" href="../../post/vim-on-windows/">Cài đặt gVim trên Windows 7 &raquo;</a>
+    
+  </div>
 </section>
 
   
 </body>
 </html>
+
 
 

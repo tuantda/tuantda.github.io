@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tips on tuantda@hugo</title>
+    <link>/tags/tips/</link>
+    <description>Recent content in Tips on tuantda@hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 20 May 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mẹo dùng Vim</title>
+      <link>/post/vim-basic/</link>
+      <pubDate>Fri, 20 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/post/vim-basic/</guid>
+      <description>Vim là elvis trong Slack và cũng là dụng cụ vận động ngón tay ưa thích của tui. Note lại mấy cái bài tập đánh vần để sau này già khỏi quên.
+Di chuyển trong Vim (Normal Mode) lên (k) trái (h) phải (l) xuống (j) 0 : về đầu dòng $ : đến cuối dòng } : nhảy đến 1 đoạn { : nhảy lui 1 đoạn gg (hoặc 1G) : về đầu tệp G : đến cuối tệp 50G : đến dòng 50 % : di chuyển đến ngoặc đóng của ngoặc mở tương ứng Hiện trạng thái tệp  := : hiện tổng số dòng của tệp ctrl+G : hiện tên, số dòng, tổng số dòng và số % vị trí hiện tại của tệp  Chọn Text Trong Normal Mode, dùng các lệnh sau để chọn text, các phần text được chọn sẽ được tô sáng.</description>
+    </item>
+    
+  </channel>
+</rss>

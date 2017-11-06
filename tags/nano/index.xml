@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nano on tuantda@hugo</title>
+    <link>/tags/nano/</link>
+    <description>Recent content in Nano on tuantda@hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 24 Jul 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/nano/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>NIX Tips</title>
+      <link>/post/nix-tips/</link>
+      <pubDate>Thu, 24 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/nix-tips/</guid>
+      <description>Nano Nano là một công cụ chỉnh sửa văn bản đơn giản rất hiệu quả trong Linux (cùng với Vi,Vim,Gedit..). Nói chơi vậy thôi chứ tui là tui nghiện Vim. Cỡ nào cỡ, việc đầu tiên mở cái máy nào lên là tui tìm Vim (hổng tính Windows à nhe). Khổ cái, tui cài Ubuntu, nó không cài sẵn Vim nên tui phải lọ mọ học Nano để cài Vim hehe.</description>
+    </item>
+    
+  </channel>
+</rss>

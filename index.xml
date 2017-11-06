@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tuantda@hugo</title>
+    <link>/</link>
+    <description>Recent content on tuantda@hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 26 Jul 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gimp Everyday Usage</title>
+      <link>/post/gimp-everyday-usage/</link>
+      <pubDate>Tue, 26 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/gimp-everyday-usage/</guid>
+      <description>Transparent Background To change the background color (white) to transparent:
+Colors -&amp;gt; Color to Alpha</description>
+    </item>
+    
+    <item>
+      <title>OpenWRT Basic Setup</title>
+      <link>/post/openwrt-setup/</link>
+      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/post/openwrt-setup/</guid>
+      <description>First Login Telnet Default, dropbear (SSH service) doesn&amp;rsquo;t accept any connections at firstlogin, we can use telnet to connect to router via default IP address:
+telnet 192.168.1.1 passwd exit After we set a password for OpenWRT, telnet deamon will be disabled. We can login again with ssh ssh root@192.168.1.1
+LuCI Open your browser and connect to the router at its default address (usually 192.168.1.1). Login using username root with an empty password.</description>
+    </item>
+    
+    <item>
+      <title>Đổi tên ổ đĩa USB trên Linux</title>
+      <link>/post/rename-usb-drive/</link>
+      <pubDate>Mon, 02 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/post/rename-usb-drive/</guid>
+      <description> Kiểm tra các ổ đĩa hiện có trên máy
+blkid FAT32 mlabel -i &amp;lt;device&amp;gt; ::&amp;lt;label&amp;gt; NTFS ntfslabel &amp;lt;device&amp;gt; &amp;lt;label&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>Cấu hình Slackware</title>
+      <link>/post/slackware-config/</link>
+      <pubDate>Sun, 01 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/post/slackware-config/</guid>
+      <description>Post Install Sau khi hoàn tất cài đặt và khởi động lại hệ thống, ta tiến hành một số tinh chỉnh trước khi sử dụng hàng ngày.
+Thêm người dùng Slackware cung cấp một đoạn mã giúp cho việc tạo thêm người dùng mới thật dễ dàng. Gõ vào console dòng lệnh:
+adduser và làm theo từng bước hướng dẫn rất chi tiết. Riêng phần nhóm tùy chọn ngoài nhóm mặc định users mà người dùng thuộc về, ta chỉ nên dùng các nhóm mặc định Slackware đã tạo sẵn (bằng cách nhấn mũi tên lên) vì chúng ta không muốn người dùng thông thường can thiệp quá sâu vào hệ thống.</description>
+    </item>
+    
+    <item>
+      <title>Slackware trên Dell Latitude E5410 - Cài đặt</title>
+      <link>/post/slackware-on-latitude/</link>
+      <pubDate>Sat, 24 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/post/slackware-on-latitude/</guid>
+      <description>*Update 12/12/2016:
+ Chuyển từ Legacy/MBR sang UEFI/GPT Cài đặt Slackware với LUKS+LVM*  Slackware 14.2 đã được release. Lúc trước do có nhu dualboot Slackware với Windows 7 nên tui phải dùng Legacy/MBR cho đời đơn giản. Sau khi nâng RAM lên 8Gb, chuyển hướng các ứng dụng Windows sang máy ảo nên tui chuyển hẳn sang UEFI/GPT.
+Boot Slackware-x64 DVD và tiến hành phân vùng ổ đĩa với &amp;lsquo;gdisk&amp;rsquo;</description>
+    </item>
+    
+    <item>
+      <title>Mẹo với find và sed</title>
+      <link>/post/find-sed/</link>
+      <pubDate>Thu, 20 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/find-sed/</guid>
+      <description>Find Tìm và xóa tệp Tìm và xóa các tệp Thumbs.db
+find /flashdrive -type f -name &amp;#34;Thumbs.db&amp;#34; -exec rm -f {} \;  -type f : chỉ tìm tệp không tìm thư mục -name &amp;quot;tên-file&amp;quot; : tên tệp -exec rm -f {} \; : xóa tất cả các tệp tìm thấy  Tìm và thay thế chuỗi trong nhiều tệp Thay đổi categories của các post từ [blog] sang [site]</description>
+    </item>
+    
+    <item>
+      <title>Vim 8 Native plugin manager</title>
+      <link>/post/vim-plugins/</link>
+      <pubDate>Wed, 19 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/vim-plugins/</guid>
+      <description>Update: VIM 8
+Pathogen Plugin quản lý $VIMRUNTIME
+execute pathogen#infect() execute pathogen#helptags() Để cài đặt một plugin, ta clone hoặc giải nén vào thư mục $VIM/bundle (trên Windows là $RUNTIMEPATH\vimfiles\bundle). Khởi động lại Vim để dùng plugin mới. Dùng lệnh sau để cập nhật help của plugin mới:
+:Helptags Vim-Gitgutter Hiển thị git diff của tệp với lần commit cuối nơi cột trái của cửa sổ gVim.
+Fugitive Quản lý Git trong Vim</description>
+    </item>
+    
+    <item>
+      <title>Chuyển công việc dang dở về nhà với Git</title>
+      <link>/post/git-reset-keep-changes/</link>
+      <pubDate>Mon, 03 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/git-reset-keep-changes/</guid>
+      <description>Nhu cầu là tui cần chuyển các công việc dang dở ở công ty về nhà làm tiếp nhưng lại không muốn public những thay đổi này.
+Quy tắc là nhánh master luôn sạch vì vậy các công việc của chúng ta luôn diễn ra ở nhánh chức năng.
+Tại công ty, tạo một commit tạm thời chứa tất cả những công việc dang dở muốn đem về nhà trong nhánh chuaxong và push lên remote work</description>
+    </item>
+    
+    <item>
+      <title>Cài đặt gVim trên Windows 7</title>
+      <link>/post/vim-on-windows/</link>
+      <pubDate>Mon, 20 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/vim-on-windows/</guid>
+      <description>Vim là trình biên tập văn bản mạnh mẽ dựa trên Vi thường chạy trên các hệ thống dựa trên UNIX. Bài viết này trình bày cách cài đặt gVim, một phiên bản đồ họa (GUI) của Vim, trên Windows 7 và dùng Git, Pathogen để quản lý các phần bổ trợ (plugin).
+Cài đặt gVim Cài đặt gVim từ trang chủ của Vim:
+Chọn tùy chọn Full trong quá trình cài đặt:</description>
+    </item>
+    
+    <item>
+      <title>Trò chuyện cùng Vim</title>
+      <link>/post/vim-motion/</link>
+      <pubDate>Fri, 10 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/vim-motion/</guid>
+      <description>Vim có một bộ các từ mô tả các verb (hành động), modifier (bổ nghĩa) và object (đối tượng) rất dễ nhớ. Khi kết hợp các từ này với nhau, ta sẽ tận dụng được sức mạnh của Vim để giảm thiểu những công việc nhàm chán lặp đi lặp lại hàng ngày. Điều đặc biệt là việc kết hợp này sẽ trở thành các câu trò chuyện thú vị giữa chúng ta và Vim với cấu trúc ngữ pháp sau:</description>
+    </item>
+    
+    <item>
+      <title>NIX Tips</title>
+      <link>/post/nix-tips/</link>
+      <pubDate>Thu, 24 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/nix-tips/</guid>
+      <description>Nano Nano là một công cụ chỉnh sửa văn bản đơn giản rất hiệu quả trong Linux (cùng với Vi,Vim,Gedit..). Nói chơi vậy thôi chứ tui là tui nghiện Vim. Cỡ nào cỡ, việc đầu tiên mở cái máy nào lên là tui tìm Vim (hổng tính Windows à nhe). Khổ cái, tui cài Ubuntu, nó không cài sẵn Vim nên tui phải lọ mọ học Nano để cài Vim hehe.</description>
+    </item>
+    
+    <item>
+      <title>Các ghi nhớ về ConTeXt</title>
+      <link>/post/context-howto/</link>
+      <pubDate>Tue, 01 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/context-howto/</guid>
+      <description>ConTEXt là hệ thống sắp chữ dựa trên TeX. Khác với LaTeX, một gói macro TeX chính khác, ConTeXt vừa có tính mô-đun hơn trong khái niệm, vừa có tính đơn khối hơn trong thiết kế.
+Hình ảnh Mặc định, ConTeXt tìm hình ảnh trong thư mục hiện tại, thư mục cha và thư mục cha của cha. Để ConTeXt tìm hình ảnh trong thư mục khác, ta xác định trong 2 giá trị location và directory của lệnh \setupexternalfigures:</description>
+    </item>
+    
+    <item>
+      <title>Linh tinh về OSX</title>
+      <link>/post/osx/</link>
+      <pubDate>Sun, 30 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/osx/</guid>
+      <description>Các bài viết về OSX:
+ Hệ thống: Macports DNS local Ruby và Jekyll MacVim và Janus Thêm kiểm tra chính tả tiếng Việt
+ Misc:
+ tạo .icns từ PNG
+ dùng Windskin
+  Hệ thống: Macports DNS local Thêm kiểm tra chính tả tiếng Việt Tải về bộ đóng gói Vietnamese Spell Checker, giải nén 02 tập tin .aff và .dic vào thư mục ~/Library/Spelling
+Bật kiểm tra bằng tiếng Việt trong Preferences</description>
+    </item>
+    
+    <item>
+      <title>Sử dụng cURL</title>
+      <link>/post/using-curl/</link>
+      <pubDate>Wed, 01 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/post/using-curl/</guid>
+      <description>cURL là ứng dụng dòng lệnh dùng truyền dữ liệu theo URL cho trước. So với wget thì cá nhân tui thích cURL hơn do những điều khó nói mà chỉ có đọc manual mới nói được.
+Tải nhiều tập tin theo liên kết cho trước Ví dụ tôi cần tải các ảnh truyện của chap 883 Thám tử Conan từ liên kết này: http://data.kenhsinhvien.net/conan/vol83/chap883/KSV_Rocketeam_830801.jpg
+chap=Chap883 pic=http://data.kenhsinhvien.net/conan/vol83/chap883/KSV_Rocketeam_8308[01-16].jpg curl $pic -o $chap_#1.</description>
+    </item>
+    
+    <item>
+      <title>Cú pháp markdown</title>
+      <link>/post/markdown-cheatsheet/</link>
+      <pubDate>Thu, 08 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/post/markdown-cheatsheet/</guid>
+      <description>Markdown là ngôn ngữ đánh dấu đơn giản, tạo thuận tiện cho việc chuyển đổi từ văn bản thuần sang HTML. Đây là bản cú pháp markdown thần chưởng
+Tiêu đề (Header): Một tiêu đề của đoạn văn được bắt đầu bằng dấu thăng (#). Số lượng dấu thăng thể hiện cấp độ của tiêu đề và không nhiều hơn sáu.
+# Tiêu đề 1 ## Tiêu đề 2 ### Tiêu đề 3 ### (Dấu thăng # bên phải là tuỳ ý) và khi tạo tiêu đề với ID như thế này:</description>
+    </item>
+    
+    <item>
+      <title>Kiểm tra chính tả tiếng Việt trong Vim</title>
+      <link>/post/vim-spell/</link>
+      <pubDate>Sun, 25 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/post/vim-spell/</guid>
+      <description>Từ phiên bản 7, tính năng kiểm tra chính tả (spellcheck) đã được tích hợp sẵn. Mặc định, Vim chỉ kiểm tra tiếng Anh. Để kiểm tra ngôn ngữ khác, Vim hỗ trợ tạo các tập tin chính tả theo định dạng Vim từ các gói Aspell/Hunspell thông qua lệnh mkspell trong Vim.
+Kiểm tra chính tả spellcheck Tạo tập tin kiểm tra chính tả theo định dạng Vim Trang dự án Bộ kiểm tra chính tả tiếng Việt cung cấp các gói kiểm tra chính tả dùng cho OpenOffice/LibreOffice, Firefox/Thunderbird và Hunspell.</description>
+    </item>
+    
+    <item>
+      <title>Mẹo dùng Vim</title>
+      <link>/post/vim-basic/</link>
+      <pubDate>Fri, 20 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/post/vim-basic/</guid>
+      <description>Vim là elvis trong Slack và cũng là dụng cụ vận động ngón tay ưa thích của tui. Note lại mấy cái bài tập đánh vần để sau này già khỏi quên.
+Di chuyển trong Vim (Normal Mode) lên (k) trái (h) phải (l) xuống (j) 0 : về đầu dòng $ : đến cuối dòng } : nhảy đến 1 đoạn { : nhảy lui 1 đoạn gg (hoặc 1G) : về đầu tệp G : đến cuối tệp 50G : đến dòng 50 % : di chuyển đến ngoặc đóng của ngoặc mở tương ứng Hiện trạng thái tệp  := : hiện tổng số dòng của tệp ctrl+G : hiện tên, số dòng, tổng số dòng và số % vị trí hiện tại của tệp  Chọn Text Trong Normal Mode, dùng các lệnh sau để chọn text, các phần text được chọn sẽ được tô sáng.</description>
+    </item>
+    
+    <item>
+      <title>Làm việc với Git</title>
+      <link>/post/git-everyday-use/</link>
+      <pubDate>Wed, 12 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/post/git-everyday-use/</guid>
+      <description>Git là phần mềm quản lý mã nguồn phân tán được phát triển bởi Linus Torvalds dành cho việc phát triển Linux kernel.
+Qui trình Git cơ bản Dữ liệu trong repository được Git quản lý theo ba tree: Working Directory, Index (stage) và HEAD (commit) 1 theo qui trình sau:
+Các lệnh dùng trong qui trình Đây là một Git workflow đơn giản với các nguyên tắc cơ bản 2:</description>
+    </item>
+    
+  </channel>
+</rss>

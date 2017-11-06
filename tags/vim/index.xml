@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vim on tuantda@hugo</title>
+    <link>/tags/vim/</link>
+    <description>Recent content in Vim on tuantda@hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 19 Nov 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vim 8 Native plugin manager</title>
+      <link>/post/vim-plugins/</link>
+      <pubDate>Wed, 19 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/vim-plugins/</guid>
+      <description>Update: VIM 8
+Pathogen Plugin quản lý $VIMRUNTIME
+execute pathogen#infect() execute pathogen#helptags() Để cài đặt một plugin, ta clone hoặc giải nén vào thư mục $VIM/bundle (trên Windows là $RUNTIMEPATH\vimfiles\bundle). Khởi động lại Vim để dùng plugin mới. Dùng lệnh sau để cập nhật help của plugin mới:
+:Helptags Vim-Gitgutter Hiển thị git diff của tệp với lần commit cuối nơi cột trái của cửa sổ gVim.
+Fugitive Quản lý Git trong Vim</description>
+    </item>
+    
+    <item>
+      <title>Cài đặt gVim trên Windows 7</title>
+      <link>/post/vim-on-windows/</link>
+      <pubDate>Mon, 20 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/vim-on-windows/</guid>
+      <description>Vim là trình biên tập văn bản mạnh mẽ dựa trên Vi thường chạy trên các hệ thống dựa trên UNIX. Bài viết này trình bày cách cài đặt gVim, một phiên bản đồ họa (GUI) của Vim, trên Windows 7 và dùng Git, Pathogen để quản lý các phần bổ trợ (plugin).
+Cài đặt gVim Cài đặt gVim từ trang chủ của Vim:
+Chọn tùy chọn Full trong quá trình cài đặt:</description>
+    </item>
+    
+    <item>
+      <title>Trò chuyện cùng Vim</title>
+      <link>/post/vim-motion/</link>
+      <pubDate>Fri, 10 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/vim-motion/</guid>
+      <description>Vim có một bộ các từ mô tả các verb (hành động), modifier (bổ nghĩa) và object (đối tượng) rất dễ nhớ. Khi kết hợp các từ này với nhau, ta sẽ tận dụng được sức mạnh của Vim để giảm thiểu những công việc nhàm chán lặp đi lặp lại hàng ngày. Điều đặc biệt là việc kết hợp này sẽ trở thành các câu trò chuyện thú vị giữa chúng ta và Vim với cấu trúc ngữ pháp sau:</description>
+    </item>
+    
+    <item>
+      <title>Kiểm tra chính tả tiếng Việt trong Vim</title>
+      <link>/post/vim-spell/</link>
+      <pubDate>Sun, 25 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/post/vim-spell/</guid>
+      <description>Từ phiên bản 7, tính năng kiểm tra chính tả (spellcheck) đã được tích hợp sẵn. Mặc định, Vim chỉ kiểm tra tiếng Anh. Để kiểm tra ngôn ngữ khác, Vim hỗ trợ tạo các tập tin chính tả theo định dạng Vim từ các gói Aspell/Hunspell thông qua lệnh mkspell trong Vim.
+Kiểm tra chính tả spellcheck Tạo tập tin kiểm tra chính tả theo định dạng Vim Trang dự án Bộ kiểm tra chính tả tiếng Việt cung cấp các gói kiểm tra chính tả dùng cho OpenOffice/LibreOffice, Firefox/Thunderbird và Hunspell.</description>
+    </item>
+    
+    <item>
+      <title>Mẹo dùng Vim</title>
+      <link>/post/vim-basic/</link>
+      <pubDate>Fri, 20 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/post/vim-basic/</guid>
+      <description>Vim là elvis trong Slack và cũng là dụng cụ vận động ngón tay ưa thích của tui. Note lại mấy cái bài tập đánh vần để sau này già khỏi quên.
+Di chuyển trong Vim (Normal Mode) lên (k) trái (h) phải (l) xuống (j) 0 : về đầu dòng $ : đến cuối dòng } : nhảy đến 1 đoạn { : nhảy lui 1 đoạn gg (hoặc 1G) : về đầu tệp G : đến cuối tệp 50G : đến dòng 50 % : di chuyển đến ngoặc đóng của ngoặc mở tương ứng Hiện trạng thái tệp  := : hiện tổng số dòng của tệp ctrl+G : hiện tên, số dòng, tổng số dòng và số % vị trí hiện tại của tệp  Chọn Text Trong Normal Mode, dùng các lệnh sau để chọn text, các phần text được chọn sẽ được tô sáng.</description>
+    </item>
+    
+  </channel>
+</rss>

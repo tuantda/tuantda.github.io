@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Osx on tuantda@hugo</title>
+    <link>/tags/osx/</link>
+    <description>Recent content in Osx on tuantda@hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 30 Mar 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/osx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linh tinh về OSX</title>
+      <link>/post/osx/</link>
+      <pubDate>Sun, 30 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/osx/</guid>
+      <description>Các bài viết về OSX:
+ Hệ thống: Macports DNS local Ruby và Jekyll MacVim và Janus Thêm kiểm tra chính tả tiếng Việt
+ Misc:
+ tạo .icns từ PNG
+ dùng Windskin
+  Hệ thống: Macports DNS local Thêm kiểm tra chính tả tiếng Việt Tải về bộ đóng gói Vietnamese Spell Checker, giải nén 02 tập tin .aff và .dic vào thư mục ~/Library/Spelling
+Bật kiểm tra bằng tiếng Việt trong Preferences</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Context on tuantda@hugo</title>
+    <link>/tags/context/</link>
+    <description>Recent content in Context on tuantda@hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 01 Jul 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/context/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Các ghi nhớ về ConTeXt</title>
+      <link>/post/context-howto/</link>
+      <pubDate>Tue, 01 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/context-howto/</guid>
+      <description>ConTEXt là hệ thống sắp chữ dựa trên TeX. Khác với LaTeX, một gói macro TeX chính khác, ConTeXt vừa có tính mô-đun hơn trong khái niệm, vừa có tính đơn khối hơn trong thiết kế.
+Hình ảnh Mặc định, ConTeXt tìm hình ảnh trong thư mục hiện tại, thư mục cha và thư mục cha của cha. Để ConTeXt tìm hình ảnh trong thư mục khác, ta xác định trong 2 giá trị location và directory của lệnh \setupexternalfigures:</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Slackware on tuantda@hugo</title>
+    <link>/tags/slackware/</link>
+    <description>Recent content in Slackware on tuantda@hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 01 Feb 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/slackware/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cấu hình Slackware</title>
+      <link>/post/slackware-config/</link>
+      <pubDate>Sun, 01 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/post/slackware-config/</guid>
+      <description>Post Install Sau khi hoàn tất cài đặt và khởi động lại hệ thống, ta tiến hành một số tinh chỉnh trước khi sử dụng hàng ngày.
+Thêm người dùng Slackware cung cấp một đoạn mã giúp cho việc tạo thêm người dùng mới thật dễ dàng. Gõ vào console dòng lệnh:
+adduser và làm theo từng bước hướng dẫn rất chi tiết. Riêng phần nhóm tùy chọn ngoài nhóm mặc định users mà người dùng thuộc về, ta chỉ nên dùng các nhóm mặc định Slackware đã tạo sẵn (bằng cách nhấn mũi tên lên) vì chúng ta không muốn người dùng thông thường can thiệp quá sâu vào hệ thống.</description>
+    </item>
+    
+    <item>
+      <title>Slackware trên Dell Latitude E5410 - Cài đặt</title>
+      <link>/post/slackware-on-latitude/</link>
+      <pubDate>Sat, 24 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/post/slackware-on-latitude/</guid>
+      <description>*Update 12/12/2016:
+ Chuyển từ Legacy/MBR sang UEFI/GPT Cài đặt Slackware với LUKS+LVM*  Slackware 14.2 đã được release. Lúc trước do có nhu dualboot Slackware với Windows 7 nên tui phải dùng Legacy/MBR cho đời đơn giản. Sau khi nâng RAM lên 8Gb, chuyển hướng các ứng dụng Windows sang máy ảo nên tui chuyển hẳn sang UEFI/GPT.
+Boot Slackware-x64 DVD và tiến hành phân vùng ổ đĩa với &amp;lsquo;gdisk&amp;rsquo;</description>
+    </item>
+    
+  </channel>
+</rss>
